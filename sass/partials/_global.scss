@@ -1,0 +1,161 @@
+// put global styles here
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Muli', sans-serif;
+}
+
+a {
+  color: black;
+
+  &:visited {
+    color: black;
+  }
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-height: 100vh;
+  position: relative;
+  max-width: 800px;
+}
+
+.video-wrapper {
+  border: 1px solid white;
+  overflow: hidden;
+  width: 400px;
+  display: flex;
+  align-items: flex-end;
+  height: 295px;
+  justify-content: center;
+  margin-right: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.video-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.timestamp {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.status {
+  width: 400px;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+
+  i {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 2px;
+  }
+  p {
+    margin: 0 0 3px;
+  }
+  .live {
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 5px 0px;
+    color: red;
+    border-radius: 3px;
+    border: 1px solid red;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+  h3 {
+    font-size: 24px;
+    margin: 0;
+    display: inline-block;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.video-links {
+  > h3 {
+    margin-top: 0
+  }
+
+  > div {
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      color: blue;
+    }
+
+    &.active {
+      color: blue;
+
+      i {
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        background-color: blue;
+        display: inline-block;
+        margin-right: 3px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+.is-open {
+  text-align: center;
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
