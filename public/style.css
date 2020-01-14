@@ -23,10 +23,11 @@ a {
   padding: 20px;
   min-height: 100vh;
   position: relative;
-  max-width: 800px; }
+  max-width: 800px;
+  padding: 20px; }
 
 .video-wrapper {
-  border: 1px solid white;
+  border-bottom: 2px solid black;
   overflow: hidden;
   width: 400px;
   display: -webkit-box;
@@ -39,9 +40,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 20px;
-  position: relative;
-  border-radius: 10px; }
+  position: relative; }
 
 .video-section {
   position: relative;
@@ -90,7 +89,6 @@ a {
             align-items: center;
     padding: 2px 5px 0px;
     color: red;
-    border-radius: 3px;
     border: 1px solid red;
     font-size: 16px;
     margin-top: 3px; }
@@ -103,24 +101,31 @@ a {
   position: absolute;
   bottom: 10px; }
 
-.video-links > h3 {
-  margin-top: 0; }
-
-.video-links > div {
-  margin-top: 10px;
-  cursor: pointer; }
-  .video-links > div:hover {
-    color: blue; }
-  .video-links > div.active {
-    color: blue; }
-    .video-links > div.active i {
-      border-radius: 50%;
-      width: 5px;
-      height: 5px;
-      background-color: blue;
-      display: inline-block;
-      margin-right: 3px;
-      margin-bottom: 2px; }
+.video-links,
+.underline {
+  margin-left: 20px; }
+  .video-links > h3,
+  .underline > h3 {
+    margin-top: 0; }
+  .video-links > div,
+  .underline > div {
+    margin-top: 10px;
+    cursor: pointer; }
+    .video-links > div:hover,
+    .underline > div:hover {
+      color: blue; }
+    .video-links > div.active,
+    .underline > div.active {
+      color: blue; }
+      .video-links > div.active i,
+      .underline > div.active i {
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        background-color: blue;
+        display: inline-block;
+        margin-right: 3px;
+        margin-bottom: 2px; }
 
 .is-open {
   text-align: center; }
