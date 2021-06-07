@@ -1,4 +1,4 @@
-***NOTE: This project has been abandoned. I've lost access to the RMTP traffic streams and the site is no longer live***
+***NOTE: This project has been abandoned. I've lost access to the RMTP traffic streams and the site is no longer live. I've included the serverside code at the root as well for reference***
 
 The Don Holt in Charleston is one of two bridges connecting Mt. Pleasant and the rest of Charleston County. The bridge is often backed up with heavy traffic, and occaisionally [closes](https://www.postandcourier.com/news/scdot-calls-don-holt-bridge-tarpageddon-an-unprecedented-failure-as-investigation-continues/article_b994ef58-6f02-11e7-aad8-678394eda5ca.html). Since a large number of commuters (including myself) rely on this bridge to get home, I wanted to create an easy way to check the status of it. Heavily inspired by my good friend [Sean McCambidge's](http://seanmccambridge.com/) website https://isthecooperriverbridgeclosed.com, I wanted to find a way to automate the process and display real time updates to the site.
 
